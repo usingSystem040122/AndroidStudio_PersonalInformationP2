@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="36dp"
+        android:background="@android:color/holo_purple"
+        android:gravity="center"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PERSONAL INFORMATION"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_weight="1"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="FIRST NAME: "
+            android:padding="8dp"
+            android:layout_margin="5dp"
+            />
+
+        <EditText
+            android:id="@+id/txt_Fname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:padding="5dp"
+            android:text="LAST NAME: " />
+
+        <EditText
+            android:id="@+id/txt_Lname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_margin="5dp"
+        android:padding="5dp"
+        android:text="MI: " />
+
+        <EditText
+            android:id="@+id/txt_MInitial"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:padding="5dp"
+            android:text="DATE OF BIRTH: " />
+
+        <EditText
+            android:id="@+id/txt_DateOfBirth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="date"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:hint="Y/M/D"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="GENDER:"
+            android:padding="8dp"
+            android:layout_margin="5dp"
+            />
+
+        <RadioGroup
+            android:id="@+id/rGroup_gender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <RadioButton
+                android:id="@+id/rbtn_Male"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Male"
+                android:layout_weight="1"
+                />
+
+            <RadioButton
+                android:id="@+id/rbtn_Female"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Female"
+                android:layout_weight="1"
+                />
+
+            <RadioButton
+                android:id="@+id/rbtn_Others"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Others"
+                android:layout_weight="1"
+                />
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ADDRESS:"
+            android:padding="8dp"
+            android:layout_margin="5dp"
+            />
+
+        <EditText
+            android:id="@+id/txt_Address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:inputType="text" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CITY:"
+            android:padding="8dp"
+            android:layout_margin="5dp"
+            />
+
+        <EditText
+            android:id="@+id/txt_City"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="RELATIONSHIP STATUS:"
+            android:padding="8dp"
+            android:layout_margin="5dp"
+            />
+
+        <EditText
+            android:id="@+id/txt_Relationship"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <Button
+            android:id="@+id/btn_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="ADD"
+            />
+
+        <Button
+            android:id="@+id/btn_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="VIEW" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <Button
+            android:id="@+id/btn_update"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="UPDATE"
+            />
+
+        <Button
+            android:id="@+id/btn_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="DELETE"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/holo_purple"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="50dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="THANK YOU TO USE THIS APP!!"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>
